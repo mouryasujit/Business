@@ -1,0 +1,41 @@
+.cor-container {
+  width: 100vw;
+  height: 40vh;
+  box-sizing: content-box;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+.cor-container > h2 {
+  text-align: center;
+  font-size: 3rem;
+  box-sizing: content-box;
+  padding: 1rem;
+}
+.c-container {
+  width: 140%;
+  height: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  animation: lin 7s infinite alternate;
+  background-image: repeat-x;
+}
+@keyframes lin {
+  0% {
+    transform: translate(-30%);
+  }
+}
+.c-container > img {
+  width: 20%;
+  height: 50%;
+  margin: 1rem;
+}
+@media (max-width: 768px) {
+  .cor-container {
+    height: 30vh;
+  }
+}

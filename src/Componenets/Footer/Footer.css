@@ -1,0 +1,306 @@
+/* ############################footer########################  */
+body {
+  overflow-x: hidden;
+}
+footer {
+  width: 100vw;
+  background-color: #242633;
+  height: max-content;
+  border-bottom: 2px dotted #a5f0d3;
+}
+.footer-container {
+  width: 75%;
+  height: 70%;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.footer-container > h1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem 0.5rem;
+  font-size: 3.5rem;
+}
+
+.icon-colour {
+  color: #a5f0d3;
+}
+.map-container {
+  height: max-content;
+}
+.map-container > .address {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  row-gap: 2rem;
+}
+.map-container > .map {
+  width: 60%;
+}
+.map-container {
+  display: flex;
+  margin: 1rem auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.map > iframe {
+  border-radius: 20px;
+  width: 100%;
+}
+.address > h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.address > .add {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  width: 60%;
+  font-size: 1.5rem;
+}
+.Email {
+  width: 90%;
+}
+.Email > i {
+  margin-right: 1rem;
+
+  font-size: 1.5rem;
+}
+.Email > span {
+  color: #a5f0d3;
+  font-size: 1.5rem;
+}
+.Email {
+  font-size: 1.5rem;
+}
+.callraj {
+  width: 90%;
+}
+.callraj > i {
+  margin-right: 1rem;
+
+  font-size: 1.5rem;
+}
+.callraj > span {
+  color: #a5f0d3;
+  font-size: 1.5rem;
+}
+.callraj {
+  font-size: 1.5rem;
+}
+.callpragya {
+  width: 100%;
+}
+.callpragya > i {
+  margin-right: 1rem;
+
+  font-size: 1.5rem;
+}
+
+.callpragya > span {
+  color: #a5f0d3;
+  font-size: 1.5rem;
+}
+.callpragya {
+  font-size: 1.5rem;
+}
+.social-contain {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1rem;
+  height: min-content;
+}
+.both-container {
+  display: flex;
+  width: 70vw;
+  height: max-content;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.lets-connect {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: min-content;
+}
+.lets-connect > h4 {
+  margin: 1rem;
+}
+.lets-connect > h4:hover {
+  color: aqua;
+}
+
+h6 {
+  color: #fff;
+  font-size: 1rem;
+}
+.github {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-items: center;
+  gap: 20px;
+  height: min-content;
+}
+.github > i {
+  height: max-content;
+}
+.github > h6 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.github > h6:hover {
+  color: aqua;
+}
+.linkedin {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-items: center;
+  gap: 5px;
+  height: 3rem;
+}
+.linkedin > i {
+  height: max-content;
+}
+.linkedin > h6 {
+  color: #fff;
+  padding: 0.5rem;
+  margin-bottom: 0 !important;
+}
+.linkedin > h6:hover,
+.Instagram > h6:hover,
+.Facebook > h6:hover {
+  color: aqua;
+}
+.media {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: min-content;
+}
+h6 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.Instagram {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-items: center;
+  gap: 5px;
+  height: min-content;
+}
+.Instagram > i {
+  height: max-content;
+}
+.Instagram > h6 {
+  color: #fff;
+}
+.Facebook {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  align-items: center;
+  gap: 5px;
+  height: min-content;
+}
+.Facebook > i {
+  height: max-content;
+}
+.Facebook > h6 {
+  color: #fff;
+}
+.lg-container {
+  height: 50%;
+  width: 30%;
+}
+.lg-container > img {
+  height: 100%;
+  width: 85%;
+}
+@media (max-width: 786px) {
+  footer {
+    overflow-x: hidden;
+  }
+  .footer-container {
+    width: 100vw;
+    padding: 0.5rem;
+  }
+  .footer-container > h1 {
+    font-size: 2.5rem;
+    width: fit-content;
+  }
+  .address {
+    padding: 0;
+  }
+  .address > h3 {
+    font-size: 2rem;
+  }
+  .map-container {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .Email,
+  .callpragya,
+  .callraj {
+    font-size: 1.5rem;
+  }
+  .Email > span,
+  .callpragya > span,
+  .callraj > span {
+    font-size: 1.5rem;
+  }
+  .map-container > .address {
+    width: 100%;
+  }
+  .address > .add {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+  .map-container > .map {
+    width: 100%;
+  }
+  .map-container > .map > iframe {
+    width: 100% !important;
+  }
+  .social-contain {
+    width: 100vw;
+  }
+  .both-container {
+    width: 90%;
+    height: 30vh;
+  }
+  .both-container {
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  .both-container > .lg-container {
+    height: 50%;
+    width: 30%;
+  }
+}

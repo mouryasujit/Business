@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quote-container {
+  height: 50vh;
+  width: 100vw;
+}
+.quote-container .quote-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../public/images/homepage3.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.quote {
+  color: #f3f300;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 80%;
+  margin: 0rem auto;
+}
+.quote h2 {
+  margin: auto;
+  font-size: 35px;
+}
+@media (max-width: 786px) {
+  .quote h2 {
+    font-size: 20px;
+  }
+}

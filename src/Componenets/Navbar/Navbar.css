@@ -1,0 +1,217 @@
+/* ########################################navbar styling  #############################################################*/
+/* ########################for desktop################################3 */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.logo-container > .logo {
+  order: 1;
+}
+.logo-container > span {
+  order: 2;
+  font-weight: 700;
+  font-size: 3rem;
+  color: navy;
+}
+.menu-items .a {
+  text-decoration: none;
+  color: #444;
+}
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+.menu-items {
+  order: 2;
+  display: flex;
+  cursor: pointer;
+}
+.menu-items li {
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  color: navy;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  list-style: none;
+  margin: 0 1.4rem;
+}
+.menu-items li > .as {
+  color: navy;
+  text-decoration: none;
+}
+.navbar li:hover {
+  z-index: 2000;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.logo {
+  order: 1;
+  font-size: 3rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+
+/* #######################################################media queries############################################# */
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 40px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 32px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #333333;
+  }
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar .menu-items {
+    padding: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: trasform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+  }
+  .navbar .menu-items li {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 3rem;
+  }
+  .navbar input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    display: none;
+  }
+  .nones {
+    display: none;
+  }
+}
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 30px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  line-height: 3rem;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 > span {
+  background-color: rgb(5, 6, 45);
+  border-radius: 6px;
+  font-size: 1.7rem;
+  height: 90%;
+  transition: 300ms;
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    width: 120%;
+  }
+}
