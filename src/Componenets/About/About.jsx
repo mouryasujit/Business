@@ -20,34 +20,53 @@ const About = () => {
             <div class="content">
               <h3>We are Maurya Global </h3>
               <p>
-                elit. Quam dolorem obcaecati saepe enim vitae nobis animi
-                cumque, accusamus, nesciunt eos aspernatur necessitatibus
-                excepturi veniam hic autem laborum beatae amet eum! Lorem ipsum
-                dolor sit amet consectetur, adipisicing elit. Nam saepe, sint
-                quidem, quas labore, doloremque consequatur ab perferendis illo
-                eius odit qui debitis. Laboriosam ad quaerat ut, aperiam eveniet
-                officiis!
+                Welcome to Maurya Global, an E-Commerce company that specializes
+                in the import and export of high-quality vegetables, spices, and
+                other products. Our mission is to provide our customers with the
+                best products sourced from around the world. At Maurya Global,
+                we are passionate about delivering the highest quality products
+                to our customers. We have a team of experts who work tirelessly
+                to ensure that our products are of the highest standards. Our
+                products are sourced directly from trusted farmers and suppliers
+                who adhere to strict quality control standards. We pride
+                ourselves on offering a wide variety of products, from fresh
+                vegetables to spices and other pantry staples. Our range of
+                products is carefully curated to ensure that we offer only the
+                best to our customers. We believe in building long-term
+                relationships with our customers and strive to exceed their
+                expectations in every way possible. Thank you for choosing
+                Maurya Global, and we look forward to serving you!
               </p>
               <div class="button">
                 <Link to="/contact" className="link">
                   Contact Us
                 </Link>
               </div>
+
+              <div class="social">
+                <a
+                  href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
+                  target="_blank"
+                  className=".link"
+                >
+                  <FacebookIcon className="i" fontSize="large" />
+                </a>
+                <a
+                  href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
+                  className=".link"
+                  target="_blank"
+                >
+                  <InstagramIcon className="i" fontSize="large" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/maurya-global-a75888261"
+                  className=".link"
+                  target="_blank"
+                >
+                  <LinkedInIcon className="i" fontSize="large" />
+                </a>
+              </div>
             </div>
-            <div class="social">
-              <Link to="" className=".link">
-                <FacebookIcon className="i" fontSize="large" />
-              </Link>
-              <Link to="" className=".link">
-                <InstagramIcon className="i" fontSize="large" />
-              </Link>
-              <Link to="" className=".link">
-                <LinkedInIcon className="i" fontSize="large" />
-              </Link>
-            </div>
-          </div>
-          <div class="image-section">
-            <img src="/images/grid_image1.png" alt="office-imag" width="100%" />
           </div>
         </div>
       </div>

@@ -35,14 +35,7 @@ const Footer = () => {
                 <i className="icon-colour">
                   <PhoneIcon fontSize="large" />
                 </i>
-                <span>Prashant Maurya: </span> 09136126474
-              </div>
-              <div className="callpragya">
-                <i className="icon-colour">
-                  <PhoneIcon fontSize="large" />
-                </i>
-                <span>Prashant Maurya: </span>
-                09920981062
+                <span>Prashant Maurya: </span> +91 8104730648
               </div>
             </div>
             <div className="map">
@@ -64,44 +57,52 @@ const Footer = () => {
           <div className="both-container">
             <div className="letsConnect">
               <h2 className="icon-colour">Lets Connect</h2>
-              <Link className="linkedin" to="" target="_blank">
+              <a
+                className="linkedin"
+                href="https://www.linkedin.com/in/maurya-global-a75888261"
+                target="_blank"
+              >
                 <i className="icon-colour">
                   <LinkedInIcon fontSize="large" />
                 </i>
                 <h6>linkedIn</h6>
-              </Link>
-              <Link className="linkedin" to="" target="_blank">
+              </a>
+              <a
+                className="linkedin"
+                href="https://www.linkedin.com/in/maurya-global-a75888261"
+                target="_blank"
+              >
                 <i className="icon-colour">
                   <LinkedInIcon fontSize="large" />
                 </i>
                 <h6>linkedIn</h6>
-              </Link>
+              </a>
             </div>
             <div className="lg-container">
               <img src="/images/MLOGO.png" alt="C logo" />
             </div>
             <div className="Media">
               <h2 className="icon-colour">Social Media</h2>
-              <Link
+              <a
                 className="Instagram"
-                href="http://instagram.com/csitcet"
+                href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
                 target="_blank"
               >
                 <i className="icon-colour">
                   <InstagramIcon fontSize="large" />
                 </i>
                 <h6>Instagram</h6>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="Facebook"
-                to="https://m.facebook.com/100067509726614/"
+                href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
                 target="_blank"
               >
                 <i className="icon-colour">
                   <FacebookIcon fontSize="large" />
                 </i>
                 <h6>Facebook</h6>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

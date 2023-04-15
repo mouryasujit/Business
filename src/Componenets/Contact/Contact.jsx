@@ -9,15 +9,15 @@ const Contact = () => {
         <div className="content">
           <h2>Contact Us</h2>
           <div className="contactform">
-            <form action="https://formspree.io/f/mlekeawy" method="POST">
+            <form action="https://formspree.io/f/mvonvyzd" method="POST">
               <h2>Send Message</h2>
               <div className="inputbox">
                 <input type="text" name="name" required />
                 <span>Full Name</span>
               </div>
               <div className="inputbox">
-                <input type="phone" name="phone" required />
-                <span>Mobile no.</span>
+                <input type="email" name="email" required />
+                <span>Email</span>
               </div>
               <div className="inputbox">
                 <textarea name="message" required></textarea>

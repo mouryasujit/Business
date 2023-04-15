@@ -13,7 +13,7 @@ const Navbar = () => {
             <span className="line line2"></span>
             <span className="line line3"></span>
           </div>
-          <ul className="menu-items  ">
+          <ul className="menu-items">
             <li>
               <NavLink to="/" className="as">
                 Home
@@ -30,10 +30,23 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li style={{ textDecoration: "none" }}>
+            <li
+              style={{
+                textDecoration: "none",
+                overflow: "hidden",
+              }}
+            >
               <NavLink to="/contact" className="as">
-                <button className="button-64">
-                  <span className="text">Contact</span>
+                <button
+                  className="button-64 "
+                  style={{ overflow: "hidden", width: "max-content" }}
+                >
+                  <span
+                    className="text"
+                    style={{ overflow: "hidden", width: "max-content" }}
+                  >
+                    Contact
+                  </span>
                 </button>
               </NavLink>
             </li>

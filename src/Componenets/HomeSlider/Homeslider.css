@@ -1,7 +1,7 @@
 .home-container {
   height: 93vh;
   width: 100vw;
-  background-image: url("../../../public/images/homepag1.jpg");
+  background-image: url("../../../public/images/homepag1.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -14,12 +14,12 @@
 
 @keyframes slider {
   0% {
-    background-image: url("../../../public/images/homepag1.jpg");
+    background-image: url("../../../public/images/homepag1.webp");
   }
   40% {
-    background-image: url("../../../public/images/HOMEPAGE4.jpg");
+    background-image: url("../../../public/images/HOMEPAGE4.webp");
   }
   85% {
-    background-image: url("../../../public/images/HOMEPAGE5.jpg");
+    background-image: url("../../../public/images/HOMEPAGE5.webp");
   }
 }

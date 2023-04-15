@@ -242,7 +242,7 @@ h6 {
   height: 100%;
   width: 85%;
 }
-@media (max-width: 786px) {
+@media (max-width: 1050px) {
   footer {
     overflow-x: hidden;
   }
@@ -269,6 +269,8 @@ h6 {
   .callpragya,
   .callraj {
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
   }
   .Email > span,
   .callpragya > span,

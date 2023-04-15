@@ -4,28 +4,28 @@ import { Link } from "react-router-dom";
 
 const arr = [
   {
-    image: "/images/grid_image1.png",
-    info: "Overcome your shyness and grove to the music of salsa! Learn from aprofessional salsa instructor and gain an amazing skill to flaunt to your friends. Join us for this amazing experience with your partner!",
+    image: "/images/grain.webp",
+    info: "Grains and Pulses",
+  },
+  {
+    image: "/images/Cotton.webp",
+    info: "Lifestyle",
+  },
+  {
+    image: "/images/Pulses.webp",
+    info: "Beans and Pulses",
   },
   {
     image: "/images/grid_image1.png",
-    info: "Overcome your shyness and grove to the music of salsa! Learn from aprofessional salsa instructor and gain an amazing skill to flaunt to your friends. Join us for this amazing experience with your partner!",
+    info: "Fruits",
   },
   {
-    image: "/images/grid_image1.png",
-    info: "Overcome your shyness and grove to the music of salsa! Learn from aprofessional salsa instructor and gain an amazing skill to flaunt to your friends. Join us for this amazing experience with your partner!",
+    image: "/images/vegetables.webp",
+    info: "Vegetables",
   },
   {
-    image: "/images/grid_image1.png",
-    info: "Overcome your shyness and grove to the music of salsa! Learn from aprofessional salsa instructor and gain an amazing skill to flaunt to your friends. Join us for this amazing experience with your partner!",
-  },
-  {
-    image: "/images/grid_image1.png",
-    info: "Overcome your shyness and grove to the music of salsa! Learn from aprofessional salsa instructor and gain an amazing skill to flaunt to your friends. Join us for this amazing experience with your partner!",
-  },
-  {
-    image: "/images/grid_image1.png",
-    info: "Overcome your shyness and grove to the music of salsa! Learn from aprofessional salsa instructor and gain an amazing skill to flaunt to your friends. Join us for this amazing experience with your partner!",
+    image: "/images/spices.webp",
+    info: "Spices",
   },
 ];
 
@@ -39,7 +39,7 @@ const Ourservices = () => {
             <div class="img-container ">
               <img src={i.image} alt="" />
               <div class="img-content">
-                <h3>Fruits</h3>
+                <h3>{i.info}</h3>
                 <br />
 
                 <Link to="/ourproducts" class="Button a">
