@@ -47,6 +47,7 @@ const About = () => {
                 <a
                   href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
                   target="_blank"
+                  rel="noreferrer noopener"
                   className=".link"
                 >
                   <FacebookIcon className="i" fontSize="large" />
@@ -55,6 +56,7 @@ const About = () => {
                   href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
                   className=".link"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <InstagramIcon className="i" fontSize="large" />
                 </a>
@@ -62,6 +64,7 @@ const About = () => {
                   href="https://www.linkedin.com/in/maurya-global-a75888261"
                   className=".link"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <LinkedInIcon className="i" fontSize="large" />
                 </a>

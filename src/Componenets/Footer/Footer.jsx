@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -61,6 +61,7 @@ const Footer = () => {
                 className="linkedin"
                 href="https://www.linkedin.com/in/maurya-global-a75888261"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <i className="icon-colour">
                   <LinkedInIcon fontSize="large" />
@@ -71,6 +72,7 @@ const Footer = () => {
                 className="linkedin"
                 href="https://www.linkedin.com/in/maurya-global-a75888261"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <i className="icon-colour">
                   <LinkedInIcon fontSize="large" />
@@ -87,6 +89,7 @@ const Footer = () => {
                 className="Instagram"
                 href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <i className="icon-colour">
                   <InstagramIcon fontSize="large" />
@@ -97,6 +100,7 @@ const Footer = () => {
                 className="Facebook"
                 href="https://www.instagram.com/invites/contact/?i=1sxc525ztiiqh&utm_content=qegt46f"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <i className="icon-colour">
                   <FacebookIcon fontSize="large" />

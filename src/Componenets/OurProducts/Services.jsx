@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const arr = [
   {
     name: "Green Cardamon",
-    title: "cardamon choti ilachi",
+    title: "cardamon choti Elaichi",
     images: "/images/cardamon.webp",
   },
   {
