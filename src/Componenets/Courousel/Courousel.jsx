@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Courousel.css";
 
 const arr = [
@@ -11,19 +9,22 @@ const arr = [
   { image: "/images/make-in-india.webp", id: "5" },
   { image: "/images/digital-india.webp", id: "6" },
 ];
+
 const Courousel = () => {
-  let [currIdx, setCurrIdx] = useState(0);
+  const currIdxRef = useRef(0); // Use useRef for mutable value
   useEffect(() => {
-    const timer1 = setTimeout(
-      () => setCurrIdx(currIdx >= 5 ? (currIdx = 0) : (currIdx = currIdx + 1)),
-      3000
-    );
+    const timer1 = setTimeout(() => {
+      currIdxRef.current = currIdxRef.current >= 5 ? 0 : currIdxRef.current + 1;
+      setCurrIdx(currIdxRef.current);
+    }, 3000);
     return () => clearTimeout(timer1);
-  }, [currIdx]);
+  }, []);
+
+  const [currIdx, setCurrIdx] = useState(currIdxRef.current); // Use useState for initial state
+
   return (
     <div className="cor-container">
       <h2>We Support</h2>
-
       <div className="c-container">
         <img src={arr[currIdx].image} alt="" srcset="" />
       </div>
