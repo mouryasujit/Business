@@ -11,16 +11,16 @@ const arr = [
 ];
 
 const Courousel = () => {
-  const currIdxRef = useRef(0); // Use useRef for mutable value
+  const currIdxRef = useRef(0);
+  const [currIdx, setCurrIdx] = useState(0);
+
   useEffect(() => {
     const timer1 = setTimeout(() => {
-      currIdxRef.current = currIdxRef.current >= 5 ? 0 : currIdxRef.current + 1;
-      setCurrIdx(currIdxRef.current);
+      setCurrIdx((prevIdx) => (prevIdx >= 5 ? 0 : prevIdx + 1));
+      currIdxRef.current = currIdx;
     }, 3000);
     return () => clearTimeout(timer1);
-  }, []);
-
-  const [currIdx, setCurrIdx] = useState(currIdxRef.current); // Use useState for initial state
+  }, [currIdx]);
 
   return (
     <div className="cor-container">
