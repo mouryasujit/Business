@@ -141,6 +141,21 @@
   padding: 10px;
   font-size: 18px;
 }
+.popupcross {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 2%;
+  left: 93%;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.popupcross:hover {
+  color: red;
+  background-color: lightgrey;
+}
 body {
   position: relative;
 }
@@ -173,5 +188,16 @@ body {
     height: 70vh;
     top: 7%;
     left: 2%;
+  }
+  .popupcross {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 1%;
+    left: 88%;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
   }
 }

@@ -26,7 +26,7 @@ const Courousel = () => {
     <div className="cor-container">
       <h2>We Support</h2>
       <div className="c-container">
-        <img src={arr[currIdx].image} alt="" srcset="" />
+        <img src={arr[currIdx].image} alt="" />
       </div>
     </div>
   );

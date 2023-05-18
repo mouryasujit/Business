@@ -1,7 +1,8 @@
 /* ###############################################overlay styling############################### */
 #food {
   padding: 5rem 0 10rem 0;
-  background-color: #242633;
+  /* background-color: #242633; */
+  background-color: #fff;
 }
 #food h2 {
   text-align: center;

@@ -16,7 +16,7 @@ const arr = [
     info: "Beans and Pulses",
   },
   {
-    image: "/images/grid_image1.png",
+    image: "/images/fruits.jpg",
     info: "Fruits",
   },
   {
@@ -32,7 +32,7 @@ const arr = [
 const Ourservices = () => {
   return (
     <section id="food">
-      <h2>Our Products</h2>
+      <h2 style={{ color: "#000", fontWeight: "bold" }}>Our Products</h2>
       <div class="food-container container">
         {arr.map((i) => (
           <div class="food-type fruit">

@@ -50,7 +50,7 @@
 .menu-items li {
   margin-left: 1.5rem;
   font-size: 1.8rem;
-  color: navy;
+  color: #fff;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
   list-style: none;

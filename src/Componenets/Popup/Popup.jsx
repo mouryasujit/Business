@@ -2,6 +2,7 @@ import React from "react";
 import "./Popup.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 let counts = 0;
 const Popup = () => {
   const [usePop, setusePop] = useState();
@@ -27,9 +28,9 @@ const Popup = () => {
     <>
       {usePop && (
         <section className="contact">
-          <button className="Button" onClick={() => setusePop(false)}>
-            Close
-          </button>
+          <div onClick={() => setusePop(false)} className="popupcross">
+            <CloseIcon style={{ fontSize: "36px" }} />
+          </div>
           <div className="content">
             <h2>Contact Us</h2>
             <div className="contactform">

@@ -2,133 +2,133 @@ import React, { useEffect, useState } from "react";
 import "./Services.css";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const arr = [
   {
     name: "Green Cardamon",
-    title: "cardamon choti Elaichi",
+    title: "cardamon choti Elaichi spices",
     images: "/images/cardamon.webp",
   },
   {
     name: "Coriander",
-    title: "corainder sukha dhaniya",
+    title: "corainder sukha dhaniya spices",
     images: "/images/parslay.webp",
   },
   {
     name: "Fenugreek",
-    title: "fenugreek methi",
+    title: "fenugreek methi spices",
     images: "/images/fenugreek.webp",
   },
   {
     name: "Asafoetida ",
-    title: "asafoetida hing",
+    title: "asafoetida hing spices",
     images: "/images/spices.webp",
   },
   {
     name: "Cinnamon",
-    title: "cinnamon cassia bark dalchini",
+    title: "cinnamon cassia bark dalchini spices",
     images: "/images/cinnamon.webp",
   },
   {
     name: "Fennel",
-    title: "fennel sauf",
+    title: "fennel sauf spices",
     images: "/images/spices.webp",
   },
   {
     name: "Carom",
-    title: "carom ajwain",
+    title: "carom ajwain spices",
     images: "/images/spices.webp",
   },
   {
     name: "Cloves",
-    title: "cloves lavang",
+    title: "cloves lavang spices",
     images: "/images/clove.webp",
   },
   {
     name: "Black pepper",
-    title: "blackpepper kali mirch",
+    title: "blackpepper kali mirch spices",
     images: "/images/blackpepper.webp",
   },
   {
     name: "Red chilli",
-    title: "red chilli",
+    title: "red chilli spices",
     images: "/images/peppers.webp",
   },
   {
     name: "Mustard Seeds",
-    title: "Mustard Seeds rai sarso",
+    title: "Mustard Seeds rai sarso spices",
     images: "/images/mustard.webp",
   },
   {
     name: "Mace ",
-    title: "javitri mace",
+    title: "javitri mace spices",
     images: "/images/spices.webp",
   },
   {
     name: "Garam Masala",
-    title: "garam masala",
+    title: "garam masala spices",
     images: "/images/garammasala.webp",
   },
   {
     name: "Wheat Flour",
-    title: "wheatflour atta",
+    title: "wheatflour atta grains and pulses",
     images: "/images/flour.webp",
   },
   {
     name: "Maida",
-    title: "maida rice flour",
+    title: "maida rice flour grains and pulses",
     images: "/images/flour.webp",
   },
   {
     name: "Whole Wheat",
-    title: "whole wheat",
+    title: "whole wheat grains and pulses",
     images: "/images/grain.webp",
   },
   {
     name: "Green Mung Beans",
-    title: "green mung beans",
+    title: "green mung beans grains and pulses",
     images: "/images/mungbeans.webp",
   },
   {
     name: "Peas",
-    title: "peas matar",
+    title: "peas matar grains and pulses",
     images: "/images/greenpeas.webp",
   },
   {
     name: "Toor Dal",
-    title: "toor dal",
+    title: "toor dal grains and pulses",
     images: "/images/yellowdal.webp",
   },
 
   {
     name: "Chick Peas",
-    title: "chickpea",
+    title: "chickpea grains and pulses",
     images: "/images/chickpea.webp",
   },
 
   {
     name: "Red Lentils",
-    title: "redlentils",
+    title: "redlentils grains and pulses",
     images: "/images/lentils.webp",
   },
   {
     name: "Onions",
-    title: "onions kanda",
+    title: "onions kanda vegetables",
     images: "/images/onions.webp",
   },
   {
     name: "Potatoes",
-    title: "potatoes aloo",
+    title: "potatoes aloo vegetables",
     images: "/images/potatoes.webp",
   },
   {
     name: "Garlic",
-    title: "garlic adrak",
+    title: "garlic adrak vegetables",
     images: "/images/garlic.webp",
   },
   {
     name: "Rice",
-    title: "rice chawal",
+    title: "rice chawal ",
     images: "/images/rice.webp",
   },
   {
@@ -146,8 +146,15 @@ const Services = () => {
   // useEffect(() => {
   //   arr.filter();
   // });
-  const [searchQuery, setSearchQuery] = useState(""); // State for search query
+  const location = useLocation().search.split("%20").join("");
+  // console.log(location);
+  const query = location;
+  // console.log(query);
+  const [searchQuery, setSearchQuery] = useState(
+    "" || query.slice(1, query.length)
+  ); // State for search query
   const [filteredData, setFilteredData] = useState([]); // State for filtered data
+  // const [searchdata, setsearchdata] = useState();
 
   useEffect(() => {
     // Update filteredData whenever searchQuery changes
@@ -198,14 +205,15 @@ const Services = () => {
           ) : (
             <h1
               style={{
-                textAlign: "center",
+                textAlign: "justify",
                 fontWeight: "bold",
                 padding: "3rem",
                 color: "red",
               }}
             >
               This product is not currently listed in our website you can
-              contact for more info about this product
+              contact for more info about this product or try searching product
+              name with spaces or in any other language.
             </h1>
           )}
         </div>

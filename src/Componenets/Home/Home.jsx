@@ -14,10 +14,10 @@ const Home = () => {
     <div>
       <Navbar />
       <Homeslider />
-      <Courousel />
       <Popup />
       <Ourservices />
       <Quote />
+      <Courousel />
       <Footer />
     </div>
   );
