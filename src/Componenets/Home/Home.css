@@ -2,15 +2,17 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
 .home {
   background-image: url("/public/home.gif");
   background-repeat: no-repeat;
   background-size: contain;
-  
 }
-@media (max-width:800px) {
-  .home{
-     background-size: cover;
-     object-fit: cover;
+
+@media (max-width: 800px) {
+  .home {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
