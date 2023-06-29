@@ -2,7 +2,9 @@
   height: 95vh;
   display: flex;
   justify-content: center;
-  background-color: #013914;
+  // background-color: #013914;
+  background-color: transparent;
+  backdrop-filter: blur(1px) saturate(60%) contrast(45%) brightness(80%);
   color: white;
 
   .container {
