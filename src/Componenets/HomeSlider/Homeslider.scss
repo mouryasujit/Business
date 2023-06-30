@@ -136,13 +136,15 @@
         align-items: center;
         gap: 10px;
 
+
         span {
           width: max-content;
         }
 
         button {
           width: max-content;
-          color: white;
+          color:yellow  ;
+          // font-weight: bold;
           border: 1px solid white;
           padding: 5px 10px;
           border-radius: 20px;
@@ -162,7 +164,9 @@
   }
 
   @media (max-width: 768px) {
-     
+     .featured{
+      height: 80vw;
+     }
     .container {
       width: 100%;
       padding: 0 20px;

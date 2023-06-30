@@ -68,17 +68,6 @@ const Footer = () => {
                 </i>
                 <h6>linkedIn</h6>
               </a>
-              <a
-                className="linkedin"
-                href="https://www.linkedin.com/in/maurya-global-a75888261"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <i className="icon-colour">
-                  <LinkedInIcon fontSize="large" />
-                </i>
-                <h6>linkedIn</h6>
-              </a>
             </div>
             <div className="lg-container">
               <img src="/images/MLOGO.png" alt="C logo" />

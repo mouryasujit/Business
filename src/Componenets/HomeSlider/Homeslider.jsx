@@ -39,9 +39,15 @@ function HomeSlider() {
 
           <div className="popular">
             <h2 className="ourP">Products:</h2>
-            <button onClick={() => navigate("/ourproducts")}>Fruits</button>
-            <button onClick={() => navigate("/ourproducts")}>Spices</button>
-            <button onClick={() => navigate("/ourproducts")}>Vegetables</button>
+            <button onClick={() => navigate("/ourproducts?fruits")}>
+              Fruits
+            </button>
+            <button onClick={() => navigate("/ourproducts?spices")}>
+              Spices
+            </button>
+            <button onClick={() => navigate("/ourproducts?vegetables")}>
+              Vegetables
+            </button>
             {/* <button onClick={() => navigate("/ourproducts")}>
               ...Many More
             </button> */}

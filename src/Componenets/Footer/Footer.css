@@ -111,6 +111,7 @@ footer {
   font-size: 1.5rem;
 }
 .social-contain {
+  background-color:#242633;
   display: flex;
   width: 100%;
   margin: 0 auto;
@@ -235,8 +236,14 @@ h6 {
   color: #fff;
 }
 .lg-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50%;
   width: 30%;
+  box-shadow: 0 1px 2px white;
+  border-radius: 20px;
 }
 .lg-container > img {
   height: 100%;
